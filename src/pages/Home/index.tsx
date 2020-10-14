@@ -11,7 +11,7 @@ import {
   City,
   State,
 } from './styles';
-import Logo from '../../assets/images/Logo.png';
+import Logo from '../../assets/images/Logo.svg';
 
 const Home: React.FC = () => (
   <Wrapper>
@@ -27,7 +27,7 @@ const Home: React.FC = () => (
         <State>Santa Catarina</State>
       </Location>
 
-      <Link to="/">
+      <Link to="/orphanages">
         <FiArrowRight size={26} />
       </Link>
     </Container>
