@@ -23,8 +23,8 @@ const Home: React.FC = () => (
       </Main>
 
       <Location>
-        <City>Rio do Sul</City>
-        <State>Santa Catarina</State>
+        <City>Campo Grande</City>
+        <State>Mato Grosso do Sul</State>
       </Location>
 
       <Link to="/orphanages">
