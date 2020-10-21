@@ -5,7 +5,7 @@ import { Map, TileLayer, Marker } from 'react-leaflet';
 import Leaflet from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-import MapMarker from '../../assets/images/MapMarker.svg';
+import MapMarker from '../../assets/images/map-marker.svg';
 
 import {
   Wrapper,
@@ -53,14 +53,14 @@ const OrphanagesMap: React.FC = () => (
       <Marker icon={mapIcon} position={[-20.5227256, -54.6424034]}>
         <Popup closeButton={false} minWidth={240} maxWidth={240}>
           Lar das meninas
-          <Link to="/">
+          <Link to="/orphanages/1">
             <FiArrowRight size={20} color="#fff" />
           </Link>
         </Popup>
       </Marker>
     </Map>
 
-    <Link to="/create">
+    <Link to="/orphanages/create">
       <FiPlus size={32} />
     </Link>
   </Wrapper>
