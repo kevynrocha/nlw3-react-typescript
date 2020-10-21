@@ -17,6 +17,7 @@ import {
   City,
   State,
   Popup,
+  CreateButton,
 } from './styles';
 
 const mapIcon = Leaflet.icon({
@@ -60,9 +61,9 @@ const OrphanagesMap: React.FC = () => (
       </Marker>
     </Map>
 
-    <Link to="/orphanages/create">
+    <CreateButton to="/orphanages/create">
       <FiPlus size={32} />
-    </Link>
+    </CreateButton>
   </Wrapper>
 );
 
