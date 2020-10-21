@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FiClock, FiInfo } from 'react-icons/fi';
-import { Marker, TileLayer } from 'react-leaflet';
+import { Marker } from 'react-leaflet';
 import L from 'leaflet';
 
 import mapMarkerImg from '../../assets/images/map-marker.svg';
 
-// import PrimaryButton from '../../components/PrimaryButton';
-// import Sidebar from '../../components/Sidebar';
-// import Map from '../../components/Map';
+import PrimaryButton from '../../components/PrimaryButton';
+import Sidebar from '../../components/Sidebar';
+import Map from '../../components/Map';
 
 import './styles.css';
 
@@ -23,7 +23,7 @@ const happyMapIcon = L.icon({
 export default function Orphanage() {
   return (
     <div id="page-orphanage">
-      {/* <Sidebar /> */}
+      <Sidebar />
 
       <main>
         <div className="orphanage-details">
@@ -79,7 +79,7 @@ export default function Orphanage() {
             </p>
 
             <div className="map-container">
-              {/* <Map
+              <Map
                 interactive={false}
                 center={[-27.2092052, -49.6401092]}
                 zoom={16}
@@ -90,7 +90,7 @@ export default function Orphanage() {
                   icon={happyMapIcon}
                   position={[-27.2092052, -49.6401092]}
                 />
-              </Map> */}
+              </Map>
 
               <footer>
                 <a href="/">Ver rotas no Google Maps</a>
@@ -117,10 +117,10 @@ export default function Orphanage() {
               </div>
             </div>
 
-            {/* <PrimaryButton type="button">
+            <PrimaryButton type="button">
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato
-            </PrimaryButton> */}
+            </PrimaryButton>
           </div>
         </div>
       </main>

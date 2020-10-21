@@ -2,29 +2,29 @@ import React from 'react';
 import { Marker } from 'react-leaflet';
 import { FiPlus } from 'react-icons/fi';
 
-// import PrimaryButton from '../../components/PrimaryButton';
-// import Sidebar from '../../components/Sidebar';
-// import Map from '../../components/Map';
-// import happyMapIcon from '../../components/Map/happMapIcon';
+import PrimaryButton from '../../components/PrimaryButton';
+import Sidebar from '../../components/Sidebar';
+import Map from '../../components/Map';
+import happyMapIcon from '../../components/Map/happMapIcon';
 import './styles.css';
 
 export default function OrphanagesMap() {
   return (
     <div id="page-create-orphanage">
-      {/* <Sidebar /> */}
+      <Sidebar />
 
       <main>
         <form className="create-orphanage-form">
           <fieldset>
             <legend>Dados</legend>
 
-            {/* <Map style={{ width: '100%', height: 280 }}>
+            <Map style={{ width: '100%', height: 280 }}>
               <Marker
                 interactive={false}
                 icon={happyMapIcon}
                 position={[-27.2092052, -49.6401092]}
               />
-            </Map> */}
+            </Map>
 
             <div className="input-block">
               <label htmlFor="name">Nome</label>
@@ -43,7 +43,7 @@ export default function OrphanagesMap() {
 
               <div className="uploaded-image" />
 
-              <button className="new-image">
+              <button type="button" className="new-image">
                 <FiPlus size={24} color="#15b6d6" />
               </button>
             </div>
@@ -74,7 +74,7 @@ export default function OrphanagesMap() {
             </div>
           </fieldset>
 
-          {/* <PrimaryButton type="submit">Confirmar</PrimaryButton> */}
+          <PrimaryButton type="submit">Confirmar</PrimaryButton>
         </form>
       </main>
     </div>
