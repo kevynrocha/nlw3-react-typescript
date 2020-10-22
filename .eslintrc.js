@@ -19,6 +19,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    camelcase: 'off',
     'react/require-default-props': 'off',
     'object-curly-newline': 'off',
     'import/prefer-default-export': 'off',
